@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_project_iconic/screens/api_url.dart';
 import 'package:flutter_project_iconic/screens/first_screen.dart';
 import 'package:flutter_project_iconic/screens/login_screen.dart';
 import 'package:flutter_project_iconic/screens/main_screen.dart';
@@ -20,6 +19,7 @@ class MyApp extends StatelessWidget {
           LogInScreen.nav:(context) => LogInScreen(),
           RegisterScreen.nav: (context)=> RegisterScreen(),
           MainScreen.nav: (context) => MainScreen(),
+          //MovieDetail.nav: (context)=> MovieDetail(),
 //          ApiKey.nav: (context) => ApiKey(),
         }
     );

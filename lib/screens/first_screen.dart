@@ -8,16 +8,20 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
-              child: Container(
-                child: Image.network(
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sign_of_the_Deathly_Hallows.svg/884px-Sign_of_the_Deathly_Hallows.svg.png'),
-                height: 60.0,
+              child: Card(
+                elevation: 30,
+                shape: CircleBorder(),
+                child: CircleAvatar(
+                  backgroundColor: Colors.lightBlue.shade200,
+                  radius: 70,
+                  child: Image.network('https://cdn4.iconfinder.com/data/icons/planner-color/64/popcorn-movie-time-512.png')
+                ),
               ),
             ),
             SizedBox(
@@ -25,19 +29,19 @@ class FirstScreen extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'HARRY POTTER',
+                'MOVIES FOR YOU',
                 style: TextStyle(
-                  fontSize: 45.0,
-                  fontWeight: FontWeight.w800,
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
             SizedBox(
-              height: 50.0,
+              height: 30.0,
             ),
             RoundedButtonV2(
               title: 'Log In',
-              colores: Colors.blueGrey,
+              colores: Colors.white,
               onPressed: () {
                 Navigator.pushNamed(context, LogInScreen.nav);
               },
@@ -47,7 +51,7 @@ class FirstScreen extends StatelessWidget {
             ),
             RoundedButton(
               title: 'Register',
-              colores: Colors.grey,
+              colores: Colors.lightBlue.shade200,
               onPressed: () {
                 Navigator.pushNamed(context, RegisterScreen.nav);
               },

@@ -14,10 +14,10 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 24),
         child: Column(
@@ -27,7 +27,7 @@ class RegisterScreen extends StatelessWidget {
             Container(
               height: 200.0,
               child: Image.network(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sign_of_the_Deathly_Hallows.svg/884px-Sign_of_the_Deathly_Hallows.svg.png'),
+                  'https://cdn4.iconfinder.com/data/icons/planner-color/64/popcorn-movie-time-512.png'),
             ),
             SizedBox(
               height: 48.0,
@@ -69,7 +69,7 @@ class RegisterScreen extends StatelessWidget {
               height: 24.0,
             ),
             RoundedButton(
-              colores: Colors.grey,
+              colores: Colors.lightBlue.shade200,
               title: 'Register',
               onPressed: () async {
                 try {
